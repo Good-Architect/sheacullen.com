@@ -4,7 +4,7 @@ export default function Home() {
       {/* Logo with horizontal lines */}
       <div className="w-full flex items-center gap-4 pt-20 sm:pt-24 pb-5 px-6">
         <div className="flex-1 border-t-2 border-[#f6e3a4]" />
-        <span className="text-[#f6e3a4] tracking-[0.35em] text-2xl sm:text-3xl inline-flex items-center">
+        <a href="mailto:shea@goodarchitect.com.au" className="text-[#f6e3a4] tracking-[0.35em] text-2xl sm:text-3xl inline-flex items-center no-underline hover:opacity-80 transition-opacity">
           <span className="font-display">SHEA</span>
           <span
             className="font-cursive text-[2.65em] tracking-normal leading-none -ml-2"
@@ -12,7 +12,7 @@ export default function Home() {
             C
           </span>
           <span className="font-display">ULLEN</span>
-        </span>
+        </a>
         <div className="flex-1 border-t-2 border-[#f6e3a4]" />
       </div>
 
@@ -35,14 +35,14 @@ export default function Home() {
       </div>
 
       {/* Postcards */}
-      <div className="flex items-end justify-center pb-0 px-4">
+      <div className="flex flex-col sm:flex-row items-center sm:items-end justify-center pb-0 px-4 gap-6 sm:gap-0">
         <a
           href="https://dudils.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="postcard-wrapper -rotate-3 origin-bottom -mr-4 sm:-mr-8"
+          className="postcard-wrapper sm:-rotate-3 origin-bottom sm:-mr-4 md:-mr-8"
         >
-          <div className="postcard-card h-48 sm:h-72 lg:h-80">
+          <div className="postcard-card h-56 sm:h-72 lg:h-80">
             <img
               src="/images/postcards/dudilspostcard.webp"
               alt="Dudils"
@@ -58,9 +58,9 @@ export default function Home() {
           href="https://www.goodarchitect.com.au"
           target="_blank"
           rel="noopener noreferrer"
-          className="postcard-wrapper rotate-1 origin-bottom -mr-4 sm:-mr-8"
+          className="postcard-wrapper sm:rotate-1 origin-bottom sm:-mr-4 md:-mr-8"
         >
-          <div className="postcard-card h-48 sm:h-72 lg:h-80">
+          <div className="postcard-card h-56 sm:h-72 lg:h-80">
             <img
               src="/images/postcards/good.webp"
               alt="Good Architect"
@@ -76,9 +76,9 @@ export default function Home() {
           href="https://www.friendsfindme.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="postcard-wrapper rotate-3 origin-bottom"
+          className="postcard-wrapper sm:rotate-3 origin-bottom"
         >
-          <div className="postcard-card h-48 sm:h-72 lg:h-80">
+          <div className="postcard-card h-56 sm:h-72 lg:h-80">
             <img
               src="/images/postcards/Friendsfindmepostcard.webp"
               alt="Friends Find Me"

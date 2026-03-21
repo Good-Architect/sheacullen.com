@@ -39,17 +39,19 @@ body {
   transform: translateY(-12px) scale(1.05);
 }
 
-/* Override rotation on hover to preserve it while adding lift */
-.postcard-wrapper.-rotate-3:hover {
-  transform: rotate(-3deg) translateY(-12px) scale(1.05);
-}
+/* Override rotation on hover to preserve it while adding lift (sm+ only) */
+@media (min-width: 640px) {
+  .postcard-wrapper.sm\:-rotate-3:hover {
+    transform: rotate(-3deg) translateY(-12px) scale(1.05);
+  }
 
-.postcard-wrapper.rotate-1:hover {
-  transform: rotate(1deg) translateY(-12px) scale(1.05);
-}
+  .postcard-wrapper.sm\:rotate-1:hover {
+    transform: rotate(1deg) translateY(-12px) scale(1.05);
+  }
 
-.postcard-wrapper.rotate-3:hover {
-  transform: rotate(3deg) translateY(-12px) scale(1.05);
+  .postcard-wrapper.sm\:rotate-3:hover {
+    transform: rotate(3deg) translateY(-12px) scale(1.05);
+  }
 }
 
 /* Postcard card with text overlay */
