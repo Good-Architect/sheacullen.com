@@ -35,12 +35,12 @@ export default function Home() {
       </div>
 
       {/* Postcards */}
-      <div className="flex flex-col sm:flex-row items-center sm:items-end justify-center pb-0 px-4 gap-6 sm:gap-0">
+      <div className="flex flex-col sm:flex-row items-center sm:items-end justify-center pb-0 px-4 sm:gap-0">
         <a
           href="https://dudils.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="postcard-wrapper sm:-rotate-3 origin-bottom sm:-mr-4 md:-mr-8"
+          className="postcard-wrapper -rotate-3 origin-bottom z-30 sm:-mr-4 md:-mr-8"
         >
           <div className="postcard-card h-56 sm:h-72 lg:h-80">
             <img
@@ -58,7 +58,7 @@ export default function Home() {
           href="https://www.goodarchitect.com.au"
           target="_blank"
           rel="noopener noreferrer"
-          className="postcard-wrapper sm:rotate-1 origin-bottom sm:-mr-4 md:-mr-8"
+          className="postcard-wrapper rotate-1 origin-bottom z-20 -mt-8 sm:mt-0 sm:-mr-4 md:-mr-8"
         >
           <div className="postcard-card h-56 sm:h-72 lg:h-80">
             <img
@@ -76,7 +76,7 @@ export default function Home() {
           href="https://www.friendsfindme.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="postcard-wrapper sm:rotate-3 origin-bottom"
+          className="postcard-wrapper rotate-3 origin-bottom z-10 -mt-8 sm:mt-0"
         >
           <div className="postcard-card h-56 sm:h-72 lg:h-80">
             <img
