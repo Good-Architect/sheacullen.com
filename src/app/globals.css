@@ -10,6 +10,8 @@
   --font-script: "Cormorant", Georgia, serif;
   --font-display: "Shentox", "Eve Sans Neue", "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --font-cursive: "Corinthia", "Edwardian Script ITC", "Bickham Script Pro", "Snell Roundhand", cursive;
+  --font-title: "Vineta BT", "Bungee Shade", "Bungee", "Impact", sans-serif;
+  --font-subtitle: "Britannic Bold", "Oswald", "Anton", sans-serif;
 }
 
 html {
@@ -26,7 +28,7 @@ body {
   padding: 0;
 }
 
-/* Postcard hover animation — matches every.to's bouncy stamp effect */
+/* Postcard hover animation — bouncy stamp effect */
 .postcard-wrapper {
   cursor: pointer;
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -48,6 +50,78 @@ body {
 
 .postcard-wrapper.rotate-3:hover {
   transform: rotate(3deg) translateY(-12px) scale(1.05);
+}
+
+/* Postcard card with text overlay */
+.postcard-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  aspect-ratio: 1749 / 1241;
+  box-shadow: 0 35px 35px rgba(0, 0, 0, 0.5);
+}
+
+.postcard-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem 0.75rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.25) 50%, transparent 100%);
+}
+
+.postcard-title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  margin: 0;
+}
+
+.postcard-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.65rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.3;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  margin: 0.15rem 0 0;
+}
+
+/* Scale up text on hover */
+.postcard-wrapper:hover .postcard-title {
+  transform: scale(1.08);
+}
+
+.postcard-wrapper:hover .postcard-subtitle {
+  transform: scale(1.05);
+}
+
+@media (min-width: 640px) {
+  .postcard-title {
+    font-size: 1.5rem;
+  }
+  .postcard-subtitle {
+    font-size: 0.8rem;
+  }
+  .postcard-overlay {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .postcard-title {
+    font-size: 1.75rem;
+  }
+  .postcard-subtitle {
+    font-size: 0.9rem;
+  }
 }
 
 ::selection {
