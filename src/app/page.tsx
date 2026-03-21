@@ -86,7 +86,7 @@ export default function Home() {
             />
             <div className="postcard-overlay">
               <h3 className="postcard-title font-title">FriendsFindMe</h3>
-              <p className="postcard-subtitle font-subtitle" style={{ fontSize: "75%" }}>Let your friends know where to look if you don&apos;t come back</p>
+              <p className="postcard-subtitle font-subtitle">Choose your adventure</p>
             </div>
           </div>
         </a>
