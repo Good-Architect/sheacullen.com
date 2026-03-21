@@ -3,17 +3,17 @@ export default function Home() {
     <div className="min-h-screen bg-[#020202] flex flex-col items-center overflow-hidden">
       {/* Logo with horizontal lines */}
       <div className="w-full flex items-center gap-4 pt-10 sm:pt-12 pb-5 px-6">
-        <div className="flex-1 border-t border-white/30" />
+        <div className="flex-1 border-t-2 border-[#f6e3a4]" />
         <span className="text-white tracking-[0.35em] text-2xl sm:text-3xl inline-flex items-center">
           <span className="font-display">SHEA</span>
           <span
-            className="font-cursive text-[2em] tracking-normal leading-none"
+            className="font-cursive text-[2.65em] tracking-normal leading-none"
           >
             C
           </span>
           <span className="font-display">ULLEN</span>
         </span>
-        <div className="flex-1 border-t border-white/30" />
+        <div className="flex-1 border-t-2 border-[#f6e3a4]" />
       </div>
 
       {/* Hero content */}
@@ -27,7 +27,7 @@ export default function Home() {
           </p>
           <a
             href="mailto:shea@goodarchitect.com.au"
-            className="mt-6 inline-block rounded-full border border-[#f6e3a4]/40 bg-[#f6e3a4] px-8 py-3 text-sm sm:text-base text-[#020202] font-sans tracking-wide hover:bg-[#f6e3a4]/80 transition-colors duration-200"
+            className="mt-6 mb-8 sm:mb-10 inline-block rounded-full border border-[#f6e3a4]/40 bg-[#f6e3a4] px-8 py-3 text-sm sm:text-base text-[#020202] font-sans tracking-wide hover:bg-[#f6e3a4]/80 transition-colors duration-200"
           >
             shea@goodarchitect.com.au
           </a>
