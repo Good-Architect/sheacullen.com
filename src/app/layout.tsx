@@ -1,20 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Shea Cullen — UX & Product Design",
-    template: "%s | Shea Cullen",
-  },
+  title: "Shea Cullen — Humankind Design",
   description:
-    "UX & Product Designer with a background in architecture. I design digital products that work the way buildings should — with intention, clarity, and care for the people who use them.",
+    "A designer who creates products that work with how humans work.",
   metadataBase: new URL("https://sheacullen.com"),
   openGraph: {
-    title: "Shea Cullen — UX & Product Design",
+    title: "Shea Cullen — Humankind Design",
     description:
-      "UX & Product Designer with a background in architecture.",
+      "A designer who creates products that work with how humans work.",
     url: "https://sheacullen.com",
     siteName: "Shea Cullen",
     locale: "en_AU",
@@ -22,9 +17,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shea Cullen — UX & Product Design",
+    title: "Shea Cullen — Humankind Design",
     description:
-      "UX & Product Designer with a background in architecture.",
+      "A designer who creates products that work with how humans work.",
   },
   robots: {
     index: true,
@@ -41,15 +36,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@100..900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@100..900&family=Cormorant:ital,wght@1,400;1,500;1,600&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className="font-sans">
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
