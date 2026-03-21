@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#020202] flex flex-col items-center overflow-hidden">
       {/* Logo with horizontal lines */}
-      <div className="w-full flex items-center gap-4 pt-6 pb-5 px-6">
+      <div className="w-full flex items-center gap-4 pt-10 sm:pt-12 pb-5 px-6">
         <div className="flex-1 border-t border-white/30" />
         <span className="text-white tracking-[0.35em] text-2xl sm:text-3xl">
           <span className="font-display">SHEA</span>
@@ -24,13 +24,19 @@ export default function Home() {
             A designer who creates products that work with how humans work.
           </h1>
           <p className="mt-4 text-white/75 text-sm sm:text-base lg:text-[26px] leading-snug font-sans">
-            Humankind Design
+            human | kind | design
           </p>
+          <a
+            href="mailto:shea@goodarchitect.com.au"
+            className="mt-6 inline-block rounded-full border border-white/30 bg-white/10 px-8 py-3 text-sm sm:text-base text-white font-sans tracking-wide hover:bg-white hover:text-[#020202] transition-colors duration-200"
+          >
+            shea@goodarchitect.com.au
+          </a>
         </div>
       </div>
 
       {/* Postcards */}
-      <div className="flex items-end justify-center pb-0 px-4 -mb-4 sm:-mb-8">
+      <div className="flex items-end justify-center pb-0 px-4">
         <a
           href="https://dudils.com"
           target="_blank"
@@ -68,6 +74,9 @@ export default function Home() {
           />
         </a>
       </div>
+
+      {/* Bottom spacing */}
+      <div className="w-full h-8 sm:h-12" />
     </div>
   );
 }
