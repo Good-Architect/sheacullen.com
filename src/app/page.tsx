@@ -2,12 +2,12 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#020202] flex flex-col items-center overflow-hidden">
       {/* Logo with horizontal lines */}
-      <div className="w-full flex items-center gap-4 pt-10 sm:pt-12 pb-5 px-6">
+      <div className="w-full flex items-center gap-4 pt-20 sm:pt-24 pb-5 px-6">
         <div className="flex-1 border-t-2 border-[#f6e3a4]" />
-        <span className="text-white tracking-[0.35em] text-2xl sm:text-3xl inline-flex items-center">
+        <span className="text-[#f6e3a4] tracking-[0.35em] text-2xl sm:text-3xl inline-flex items-center">
           <span className="font-display">SHEA</span>
           <span
-            className="font-cursive text-[2.65em] tracking-normal leading-none"
+            className="font-cursive text-[2.65em] tracking-normal leading-none -ml-2"
           >
             C
           </span>
@@ -17,7 +17,7 @@ export default function Home() {
       </div>
 
       {/* Hero content */}
-      <div className="flex-1 flex flex-col items-center justify-center px-6 pt-5 sm:pt-8 lg:pt-10 pb-4">
+      <div className="flex-1 flex flex-col items-center justify-center px-6 pt-4 sm:pt-6 lg:pt-8 pb-4">
         <div className="max-w-3xl text-center">
           <h1 className="text-white font-serif text-xl sm:text-4xl lg:text-[52px] font-normal leading-tight lg:leading-[1.1]">
             A designer who creates products that work with how humans work.
