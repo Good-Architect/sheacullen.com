@@ -7,12 +7,12 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="bg-brand-gray-100 rounded-lg p-8 text-center">
-        <p className="text-lg font-medium text-brand-black mb-2">
-          Thanks for reaching out!
+      <div className="py-8">
+        <p className="text-base font-normal text-brand-black mb-2" style={{ fontFamily: "var(--font-serif)" }}>
+          Thanks for reaching out.
         </p>
         <p className="text-sm text-brand-gray-500">
-          I&apos;ll get back to you within a couple of days.
+          I'll get back to you within a couple of days.
         </p>
       </div>
     );
@@ -30,7 +30,7 @@ export function ContactForm() {
         <div>
           <label
             htmlFor="name"
-            className="block text-sm font-medium text-brand-gray-700 mb-2"
+            className="block text-sm text-brand-gray-700 mb-2"
           >
             Name
           </label>
@@ -39,14 +39,14 @@ export function ContactForm() {
             id="name"
             name="name"
             required
-            className="w-full px-4 py-3 border border-brand-gray-300 rounded-lg text-sm focus:outline-none focus:border-brand-black transition-colors"
+            className="w-full px-4 py-2 border border-brand-gray-300 rounded text-sm focus:outline-none focus:border-brand-black transition-colors bg-brand-white"
             placeholder="Your name"
           />
         </div>
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-brand-gray-700 mb-2"
+            className="block text-sm text-brand-gray-700 mb-2"
           >
             Email
           </label>
@@ -55,7 +55,7 @@ export function ContactForm() {
             id="email"
             name="email"
             required
-            className="w-full px-4 py-3 border border-brand-gray-300 rounded-lg text-sm focus:outline-none focus:border-brand-black transition-colors"
+            className="w-full px-4 py-2 border border-brand-gray-300 rounded text-sm focus:outline-none focus:border-brand-black transition-colors bg-brand-white"
             placeholder="you@example.com"
           />
         </div>
@@ -63,7 +63,7 @@ export function ContactForm() {
       <div>
         <label
           htmlFor="message"
-          className="block text-sm font-medium text-brand-gray-700 mb-2"
+          className="block text-sm text-brand-gray-700 mb-2"
         >
           Message
         </label>
@@ -72,16 +72,16 @@ export function ContactForm() {
           name="message"
           required
           rows={5}
-          className="w-full px-4 py-3 border border-brand-gray-300 rounded-lg text-sm focus:outline-none focus:border-brand-black transition-colors resize-none"
+          className="w-full px-4 py-2 border border-brand-gray-300 rounded text-sm focus:outline-none focus:border-brand-black transition-colors resize-none bg-brand-white"
           placeholder="What would you like to talk about?"
         />
       </div>
       <button
         type="submit"
-        className="inline-flex items-center gap-2 bg-brand-black text-white px-6 py-3 rounded-lg text-sm font-medium hover:opacity-80 transition-opacity"
+        className="inline-flex items-center gap-2 border border-brand-black text-brand-black px-4 py-2 rounded text-sm font-normal hover:bg-brand-black hover:text-brand-white transition-colors"
       >
         Send message
-        <span>&rarr;</span>
+        <span>→</span>
       </button>
     </form>
   );

@@ -41,45 +41,43 @@ export default async function ProjectPage({
           href="/#work"
           className="inline-flex items-center gap-2 text-sm text-brand-gray-500 hover:text-brand-black transition-colors mb-12"
         >
-          <span>&larr;</span>
+          <span>←</span>
           Back to all work
         </Link>
 
         {/* Header */}
-        <header className="mb-12">
-          <div className="flex flex-wrap gap-2 mb-4">
+        <header className="mb-14">
+          <div className="flex flex-wrap gap-2 mb-5">
             {project.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-xs text-brand-gray-500 bg-brand-gray-100 px-2.5 py-1 rounded-full"
+                className="text-xs tracking-wider uppercase text-brand-gray-500"
               >
                 {tag}
               </span>
             ))}
           </div>
-          <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-brand-black mb-3">
+          <h1 className="text-4xl md:text-5xl font-normal tracking-tight text-brand-black mb-5" style={{ fontFamily: "var(--font-serif)" }}>
             {project.title}
           </h1>
-          <p className="text-lg text-brand-gray-500 leading-relaxed">
+          <p className="text-lg text-brand-gray-500 leading-relaxed mb-8">
             {project.subtitle}
           </p>
-          <div className="mt-6 flex gap-8 text-sm text-brand-gray-500">
+          <div className="flex gap-8 text-sm text-brand-gray-500">
             <div>
-              <span className="font-medium text-brand-gray-700">
+              <span className="text-brand-gray-700">
                 Role
-              </span>{" "}
-              &middot; {project.role}
+              </span> · {project.role}
             </div>
             <div>
-              <span className="font-medium text-brand-gray-700">
+              <span className="text-brand-gray-700">
                 Year
-              </span>{" "}
-              &middot; {project.year}
+              </span> · {project.year}
             </div>
           </div>
         </header>
 
-        <hr className="border-brand-gray-100 mb-12" />
+        <hr className="border-brand-gray-100 mb-14" />
 
         {/* Body */}
         <div className="prose-custom">
@@ -91,20 +89,21 @@ export default async function ProjectPage({
               .trim();
 
             return (
-              <section key={i} className="mb-12">
+              <section key={i} className="mb-14">
                 {heading && (
-                  <h2 className="text-2xl font-semibold text-brand-black mb-4">
+                  <h2 className="text-2xl font-normal text-brand-black mb-6" style={{ fontFamily: "var(--font-serif)" }}>
                     {heading}
                   </h2>
                 )}
-                <div className="space-y-4">
+                <div className="space-y-5">
                   {content.split(/\n\n+/).map((para, j) => {
                     // Handle ### subheadings
                     if (para.startsWith("### ")) {
                       return (
                         <h3
                           key={j}
-                          className="text-lg font-semibold text-brand-black mt-8 mb-2"
+                          className="text-lg font-normal text-brand-black mt-10 mb-4" 
+                          style={{ fontFamily: "var(--font-serif)" }}
                         >
                           {para.replace("### ", "")}
                         </h3>
@@ -120,10 +119,10 @@ export default async function ProjectPage({
                           {para.split("\n").map((line, k) => (
                             <li
                               key={k}
-                              className="flex gap-2"
+                              className="flex gap-3"
                             >
                               <span className="text-brand-gray-300 mt-0.5">
-                                &bull;
+                                •
                               </span>
                               <span>
                                 {line.replace(/^- /, "")}
@@ -144,7 +143,7 @@ export default async function ProjectPage({
                           k % 2 === 1 ? (
                             <strong
                               key={k}
-                              className="font-semibold text-brand-black"
+                              className="font-medium text-brand-black"
                             >
                               {part}
                             </strong>
@@ -162,13 +161,13 @@ export default async function ProjectPage({
         </div>
 
         {/* Next project */}
-        <hr className="border-brand-gray-100 mt-16 mb-8" />
+        <hr className="border-brand-gray-100 mt-16 mb-10" />
         <div className="flex justify-between items-center">
           <Link
             href="/#work"
             className="text-sm text-brand-gray-500 hover:text-brand-black transition-colors"
           >
-            &larr; All projects
+            ← All projects
           </Link>
           {(() => {
             const idx = projects.findIndex((p) => p.slug === slug);
@@ -178,7 +177,7 @@ export default async function ProjectPage({
                 href={`/work/${next.slug}`}
                 className="text-sm text-brand-gray-500 hover:text-brand-black transition-colors"
               >
-                Next: {next.title} &rarr;
+                Next: {next.title} →
               </Link>
             );
           })()}

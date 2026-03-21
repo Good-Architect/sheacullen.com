@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="flex flex-col md:flex-row justify-between gap-12">
           <div className="max-w-sm">
-            <p className="text-lg font-medium text-brand-black mb-2">
+            <p className="text-base font-normal text-brand-black mb-3" style={{ fontFamily: "var(--font-serif)" }}>
               Shea Cullen
             </p>
             <p className="text-sm text-brand-gray-500 leading-relaxed">
@@ -18,7 +18,7 @@ export function Footer() {
 
           <div className="flex gap-16">
             <div>
-              <p className="text-xs font-medium uppercase tracking-wider text-brand-gray-500 mb-4">
+              <p className="text-xs font-normal uppercase tracking-wider text-brand-gray-500 mb-4">
                 Navigate
               </p>
               <nav className="flex flex-col gap-3">
@@ -50,7 +50,7 @@ export function Footer() {
             </div>
 
             <div>
-              <p className="text-xs font-medium uppercase tracking-wider text-brand-gray-500 mb-4">
+              <p className="text-xs font-normal uppercase tracking-wider text-brand-gray-500 mb-4">
                 Elsewhere
               </p>
               <nav className="flex flex-col gap-3">
@@ -60,13 +60,13 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm text-brand-gray-700 hover:text-brand-black transition-colors"
                 >
-                  LinkedIn &rarr;
+                  LinkedIn →
                 </a>
                 <a
                   href="mailto:shea@goodarchitect.com.au"
                   className="text-sm text-brand-gray-700 hover:text-brand-black transition-colors"
                 >
-                  Email &rarr;
+                  Email →
                 </a>
               </nav>
             </div>
@@ -75,7 +75,7 @@ export function Footer() {
 
         <div className="mt-16 pt-8 border-t border-brand-gray-100">
           <p className="text-xs text-brand-gray-500">
-            &copy; {new Date().getFullYear()} Shea Cullen. All rights
+            © {new Date().getFullYear()} Shea Cullen. All rights
             reserved.
           </p>
         </div>
