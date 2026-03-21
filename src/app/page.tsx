@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#020202] flex flex-col items-center overflow-hidden">
       {/* Logo with horizontal lines */}
-      <div className="w-full flex items-center gap-4 pt-20 sm:pt-24 pb-5 px-6">
+      <div className="w-full flex items-center gap-4 pt-[76px] sm:pt-[91px] pb-5 px-6">
         <div className="flex-1 border-t-2 border-[#f6e3a4]" />
         <a href="mailto:shea@goodarchitect.com.au" className="text-[#f6e3a4] tracking-[0.35em] text-2xl sm:text-3xl inline-flex items-center no-underline hover:opacity-80 transition-opacity">
           <span className="font-display">SHEA</span>
@@ -11,7 +11,7 @@ export default function Home() {
           >
             C
           </span>
-          <span className="font-display">ULLEN</span>
+          <span className="font-display ml-1">ULLEN</span>
         </a>
         <div className="flex-1 border-t-2 border-[#f6e3a4]" />
       </div>
