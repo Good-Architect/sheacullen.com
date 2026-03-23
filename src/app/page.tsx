@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { EmailLink } from "@/components/EmailLink";
+import { PostcardScrollFlip } from "@/components/PostcardScrollFlip";
 
 const POSTCARD_SIZES = "(max-width: 640px) 85vw, (max-width: 1024px) 30vw, 320px";
 
@@ -39,6 +40,7 @@ export default function Home() {
       </div>
 
       {/* Postcards */}
+      <PostcardScrollFlip />
       <div className="flex flex-col sm:flex-row items-center sm:items-end justify-center pb-0 px-4 sm:gap-0">
         {/* Dudils */}
         <a
@@ -97,7 +99,7 @@ export default function Home() {
           href="https://www.goodarchitect.com.au"
           target="_blank"
           rel="noopener noreferrer"
-          className="postcard-wrapper rotate-1 origin-bottom z-20 -mt-8 sm:mt-0 sm:-mr-4 md:-mr-8"
+          className="postcard-wrapper rotate-1 origin-bottom z-20 mt-4 sm:mt-0 sm:-mr-4 md:-mr-8"
         >
           <div className="postcard-card h-56 sm:h-72 lg:h-80">
             <div className="postcard-front">
@@ -148,7 +150,7 @@ export default function Home() {
           href="https://www.friendsfindme.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="postcard-wrapper rotate-3 origin-bottom z-10 -mt-8 sm:mt-0"
+          className="postcard-wrapper rotate-3 origin-bottom z-10 mt-4 sm:mt-0"
         >
           <div className="postcard-card h-56 sm:h-72 lg:h-80">
             <div className="postcard-front">

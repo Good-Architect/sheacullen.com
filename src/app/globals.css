@@ -66,10 +66,17 @@ body {
   transition-delay: 0s;
 }
 
-/* Flip the card after a sustained hover (800ms delay) */
-.postcard-wrapper:hover .postcard-card {
+/* Flip the card after a sustained hover — desktop only */
+@media (hover: hover) {
+  .postcard-wrapper:hover .postcard-card {
+    transform: rotateY(180deg);
+    transition-delay: 0.8s;
+  }
+}
+
+/* Scroll-triggered flip for touch / mobile devices */
+.postcard-wrapper.scroll-flipped .postcard-card {
   transform: rotateY(180deg);
-  transition-delay: 0.8s;
 }
 
 /* Shared face styles */
