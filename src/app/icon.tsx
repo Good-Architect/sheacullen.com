@@ -1,49 +1,6 @@
-import { ImageResponse } from "next/og";
+import { generateIcon } from "./generate-icon";
 
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
 
-export default async function Icon() {
-  const fontData = await fetch(
-    "https://fonts.gstatic.com/s/corinthia/v13/wEO6EBrAnchaJyPMHE097d8v1A.ttf",
-  ).then((res) => res.arrayBuffer());
-
-  return new ImageResponse(
-    (
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: "#020202",
-          borderRadius: "20%",
-        }}
-      >
-        <span
-          style={{
-            fontFamily: "Corinthia",
-            fontWeight: 700,
-            fontSize: 24,
-            color: "#f6e3a4",
-            lineHeight: 1,
-          }}
-        >
-          C
-        </span>
-      </div>
-    ),
-    {
-      ...size,
-      fonts: [
-        {
-          name: "Corinthia",
-          data: fontData,
-          style: "normal",
-          weight: 700,
-        },
-      ],
-    },
-  );
-}
+export default generateIcon(32, 24);

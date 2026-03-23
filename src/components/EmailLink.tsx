@@ -5,6 +5,8 @@ import { useState, useRef, useEffect, type ReactNode } from "react";
 const EMAIL = "shea@goodarchitect.com.au";
 const GMAIL_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}`;
 const OUTLOOK_URL = `https://outlook.live.com/mail/0/deeplink/compose?to=${EMAIL}`;
+const LINK_CLASS =
+  "text-white text-sm font-sans px-3 py-1.5 rounded hover:bg-white/10 transition-colors text-center no-underline";
 
 export function EmailLink({
   children,
@@ -25,7 +27,6 @@ export function EmailLink({
         !popoverRef.current.contains(e.target as Node)
       ) {
         setOpen(false);
-        setCopied(false);
       }
     };
     document.addEventListener("mousedown", handleClick);
@@ -42,9 +43,13 @@ export function EmailLink({
   const handleCopy = async (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    await navigator.clipboard.writeText(EMAIL);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      prompt("Copy this email address:", EMAIL);
+    }
   };
 
   return (
@@ -70,7 +75,7 @@ export function EmailLink({
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="text-white text-sm font-sans px-3 py-1.5 rounded hover:bg-white/10 transition-colors text-center no-underline"
+              className={LINK_CLASS}
             >
               Open in Gmail
             </a>
@@ -79,7 +84,7 @@ export function EmailLink({
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="text-white text-sm font-sans px-3 py-1.5 rounded hover:bg-white/10 transition-colors text-center no-underline"
+              className={LINK_CLASS}
             >
               Open in Outlook
             </a>

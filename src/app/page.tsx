@@ -52,7 +52,7 @@ export default function Home() {
                 className="w-full h-full object-cover"
               />
               <div className="postcard-overlay">
-                <h3 className="postcard-title font-title" data-text="Dudils">Dudils</h3>
+                <h3 className="postcard-title font-title">Dudils</h3>
                 <p className="postcard-subtitle font-subtitle">home plan search engine</p>
               </div>
             </div>
@@ -61,6 +61,7 @@ export default function Home() {
                 src="/images/postcards/reverse/dudils.webp"
                 alt="Dudils details"
                 className="w-full h-full object-fill"
+                loading="lazy"
               />
               <div className="postcard-back-content">
                 <h3 className="postcard-back-header font-handwrite">Dudils</h3>
@@ -71,7 +72,7 @@ export default function Home() {
                       <br /><br /><strong>Goal:</strong> pressure project home builders to add north orientation as a filter on their websites and redesign their plans to be passive solar capable.
                     </p>
                   </div>
-                                    <div className="postcard-back-right">
+                  <div className="postcard-back-right">
                     <p className="postcard-back-address-line font-handwrite">Next.js</p>
                     <p className="postcard-back-address-line font-handwrite">Vercel</p>
                     <p className="postcard-back-address-line font-handwrite">TypeScript</p>
@@ -97,7 +98,7 @@ export default function Home() {
                 className="w-full h-full object-cover"
               />
               <div className="postcard-overlay">
-                <h3 className="postcard-title font-title" data-text="Good Architect">Good Architect</h3>
+                <h3 className="postcard-title font-title">Good Architect</h3>
                 <p className="postcard-subtitle font-subtitle">architecture website</p>
               </div>
             </div>
@@ -106,6 +107,7 @@ export default function Home() {
                 src="/images/postcards/reverse/good.webp"
                 alt="Good Architect details"
                 className="w-full h-full object-fill"
+                loading="lazy"
               />
               <div className="postcard-back-content">
                 <h3 className="postcard-back-header font-handwrite">Good Architect</h3>
@@ -116,7 +118,7 @@ export default function Home() {
                       <br /><br /><strong>Goal:</strong> showcase past work and reviews while providing a SEO channel.
                     </p>
                   </div>
-                                    <div className="postcard-back-right">
+                  <div className="postcard-back-right">
                     <p className="postcard-back-address-line font-handwrite">Google</p>
                     <p className="postcard-back-address-line font-handwrite">Sites</p>
                   </div>
@@ -141,7 +143,7 @@ export default function Home() {
                 className="w-full h-full object-cover"
               />
               <div className="postcard-overlay">
-                <h3 className="postcard-title font-title" data-text="FriendsFindMe">FriendsFindMe</h3>
+                <h3 className="postcard-title font-title">FriendsFindMe</h3>
                 <p className="postcard-subtitle font-subtitle">Choose your adventure</p>
               </div>
             </div>
@@ -150,6 +152,7 @@ export default function Home() {
                 src="/images/postcards/reverse/friend.webp"
                 alt="FriendsFindMe details"
                 className="w-full h-full object-fill"
+                loading="lazy"
               />
               <div className="postcard-back-content">
                 <h3 className="postcard-back-header font-handwrite">FriendsFindMe</h3>
@@ -160,7 +163,7 @@ export default function Home() {
                       <br /><br /><strong>Goal:</strong> find lost people faster, because the sooner a search begins, the better the odds.
                     </p>
                   </div>
-                                    <div className="postcard-back-right">
+                  <div className="postcard-back-right">
                     <p className="postcard-back-address-line font-handwrite">Flutter</p>
                     <p className="postcard-back-address-line font-handwrite">Supabase</p>
                     <p className="postcard-back-address-line font-handwrite">Twilio</p>
@@ -172,7 +175,6 @@ export default function Home() {
         </a>
       </div>
 
-      {/* Bottom spacing */}
       <div className="w-full h-8 sm:h-12" />
     </div>
   );
