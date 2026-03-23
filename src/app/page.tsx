@@ -2,7 +2,7 @@ import { EmailLink } from "@/components/EmailLink";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#020202] flex flex-col items-center overflow-hidden">
+    <main className="min-h-screen bg-[#020202] flex flex-col items-center overflow-hidden">
       {/* Logo with horizontal lines */}
       <div className="w-full flex items-center gap-4 pt-[76px] sm:pt-[91px] pb-5 px-6">
         <div className="flex-1 border-t-2 border-[#f6e3a4]" />
@@ -50,9 +50,10 @@ export default function Home() {
                 src="/images/postcards/dudilspostcard.webp"
                 alt="Dudils"
                 className="w-full h-full object-cover"
+                fetchPriority="high"
               />
               <div className="postcard-overlay">
-                <h3 className="postcard-title font-title">Dudils</h3>
+                <h2 className="postcard-title font-title">Dudils</h2>
                 <p className="postcard-subtitle font-subtitle">home plan search engine</p>
               </div>
             </div>
@@ -64,7 +65,7 @@ export default function Home() {
                 loading="lazy"
               />
               <div className="postcard-back-content">
-                <h3 className="postcard-back-header font-handwrite">Dudils</h3>
+                <h2 className="postcard-back-header font-handwrite">Dudils</h2>
                 <div className="postcard-back-body">
                   <div className="postcard-back-left">
                     <p className="postcard-back-description font-handwrite">
@@ -96,9 +97,10 @@ export default function Home() {
                 src="/images/postcards/good.webp"
                 alt="Good Architect"
                 className="w-full h-full object-cover"
+                fetchPriority="high"
               />
               <div className="postcard-overlay">
-                <h3 className="postcard-title font-title">Good Architect</h3>
+                <h2 className="postcard-title font-title">Good Architect</h2>
                 <p className="postcard-subtitle font-subtitle">architecture website</p>
               </div>
             </div>
@@ -110,7 +112,7 @@ export default function Home() {
                 loading="lazy"
               />
               <div className="postcard-back-content">
-                <h3 className="postcard-back-header font-handwrite">Good Architect</h3>
+                <h2 className="postcard-back-header font-handwrite">Good Architect</h2>
                 <div className="postcard-back-body">
                   <div className="postcard-back-left">
                     <p className="postcard-back-description font-handwrite">
@@ -141,9 +143,10 @@ export default function Home() {
                 src="/images/postcards/Friendsfindmepostcard.webp"
                 alt="Friends Find Me"
                 className="w-full h-full object-cover"
+                fetchPriority="high"
               />
               <div className="postcard-overlay">
-                <h3 className="postcard-title font-title">FriendsFindMe</h3>
+                <h2 className="postcard-title font-title">FriendsFindMe</h2>
                 <p className="postcard-subtitle font-subtitle">Choose your adventure</p>
               </div>
             </div>
@@ -155,7 +158,7 @@ export default function Home() {
                 loading="lazy"
               />
               <div className="postcard-back-content">
-                <h3 className="postcard-back-header font-handwrite">FriendsFindMe</h3>
+                <h2 className="postcard-back-header font-handwrite">FriendsFindMe</h2>
                 <div className="postcard-back-body">
                   <div className="postcard-back-left">
                     <p className="postcard-back-description font-handwrite">
@@ -176,6 +179,6 @@ export default function Home() {
       </div>
 
       <div className="w-full h-8 sm:h-12" />
-    </div>
+    </main>
   );
 }
