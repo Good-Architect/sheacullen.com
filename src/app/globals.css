@@ -70,7 +70,7 @@ body {
 @media (hover: hover) {
   .postcard-wrapper:hover .postcard-card {
     transform: rotateY(180deg);
-    transition-delay: 0.8s;
+    transition-delay: 0.4s;
   }
 }
 
@@ -96,6 +96,10 @@ body {
 .postcard-back {
   transform: rotateY(180deg);
   z-index: 1;
+}
+
+.postcard-back img {
+  object-fit: fill !important;
 }
 
 .postcard-overlay {
