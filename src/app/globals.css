@@ -59,7 +59,7 @@ body {
   position: relative;
   overflow: visible;
   border-radius: 0.5rem;
-  aspect-ratio: 1749 / 1241;
+  aspect-ratio: 1000 / 710;
   box-shadow: 0 35px 35px rgba(0, 0, 0, 0.5);
   transform-style: preserve-3d;
   transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
