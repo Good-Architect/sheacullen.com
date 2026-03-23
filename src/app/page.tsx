@@ -52,7 +52,7 @@ export default function Home() {
                 className="w-full h-full object-cover"
               />
               <div className="postcard-overlay">
-                <h3 className="postcard-title font-title">Dudils</h3>
+                <h3 className="postcard-title font-title" data-text="Dudils">Dudils</h3>
                 <p className="postcard-subtitle font-subtitle">home plan search engine</p>
               </div>
             </div>
@@ -97,7 +97,7 @@ export default function Home() {
                 className="w-full h-full object-cover"
               />
               <div className="postcard-overlay">
-                <h3 className="postcard-title font-title">Good Architect</h3>
+                <h3 className="postcard-title font-title" data-text="Good Architect">Good Architect</h3>
                 <p className="postcard-subtitle font-subtitle">architecture website</p>
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function Home() {
                 className="w-full h-full object-cover"
               />
               <div className="postcard-overlay">
-                <h3 className="postcard-title font-title">FriendsFindMe</h3>
+                <h3 className="postcard-title font-title" data-text="FriendsFindMe">FriendsFindMe</h3>
                 <p className="postcard-subtitle font-subtitle">Choose your adventure</p>
               </div>
             </div>
