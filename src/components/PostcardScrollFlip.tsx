@@ -7,34 +7,18 @@ export function PostcardScrollFlip() {
     if (window.matchMedia("(hover: hover)").matches) return;
 
     const cards = document.querySelectorAll(".postcard-wrapper");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const nearTop = window.scrollY < 100;
-        for (const entry of entries) {
-          if (nearTop) {
-            entry.target.classList.remove("scroll-flipped");
-          } else {
-            entry.target.classList.toggle("scroll-flipped", entry.isIntersecting);
-          }
-        }
-      },
-      { threshold: 0.5 },
-    );
 
-    cards.forEach((card) => observer.observe(card));
-
-    // Also close cards when user scrolls back to top
-    const onScroll = () => {
-      if (window.scrollY < 100) {
-        cards.forEach((card) => card.classList.remove("scroll-flipped"));
-      }
+    const update = () => {
+      // Flip when scrolled past halfway down the page
+      const halfway = (document.documentElement.scrollHeight - window.innerHeight) / 2;
+      const flipped = window.scrollY > halfway;
+      cards.forEach((card) => card.classList.toggle("scroll-flipped", flipped));
     };
-    window.addEventListener("scroll", onScroll, { passive: true });
 
-    return () => {
-      observer.disconnect();
-      window.removeEventListener("scroll", onScroll);
-    };
+    window.addEventListener("scroll", update, { passive: true });
+    update();
+
+    return () => window.removeEventListener("scroll", update);
   }, []);
 
   return null;
