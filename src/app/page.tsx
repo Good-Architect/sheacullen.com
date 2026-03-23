@@ -79,8 +79,8 @@ export default function Home() {
                 <div className="postcard-back-body">
                   <div className="postcard-back-left">
                     <p className="postcard-back-description font-handwrite">
-                      A home plan search engine that filters for passive solar design.
-                      <br /><br /><strong>Goal:</strong> pressure project home builders to add north orientation as a filter on their websites and redesign their plans to be passive solar capable.
+                      A home plan search engine filtering for passive solar design.
+                      <br /><br /><strong>Goal:</strong> push builders to prioritise north orientation in their plans.
                     </p>
                   </div>
                   <div className="postcard-back-right">
@@ -131,8 +131,8 @@ export default function Home() {
                 <div className="postcard-back-body">
                   <div className="postcard-back-left">
                     <p className="postcard-back-description font-handwrite">
-                      An architecture website that advocates for sustainability and educates people on passive solar design and common approval processes.
-                      <br /><br /><strong>Goal:</strong> showcase past work and reviews while providing a SEO channel.
+                      An architecture site promoting sustainability and passive solar design.
+                      <br /><br /><strong>Goal:</strong> showcase past work and drive organic search.
                     </p>
                   </div>
                   <div className="postcard-back-right">
@@ -182,8 +182,8 @@ export default function Home() {
                 <div className="postcard-back-body">
                   <div className="postcard-back-left">
                     <p className="postcard-back-description font-handwrite">
-                      A phone app that lets people log their trip details. If they don&apos;t return on time, it sends an SMS to their friends so they know where to start looking.
-                      <br /><br /><strong>Goal:</strong> find lost people faster, because the sooner a search begins, the better the odds.
+                      Log your trip details. If you don&apos;t return on time, it texts your friends where to look.
+                      <br /><br /><strong>Goal:</strong> find lost people faster.
                     </p>
                   </div>
                   <div className="postcard-back-right">

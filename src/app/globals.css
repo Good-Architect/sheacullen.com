@@ -151,7 +151,7 @@ body {
 }
 
 .postcard-back-header {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   color: #3a3028;
@@ -181,14 +181,14 @@ body {
 }
 
 .postcard-back-description {
-  font-size: 0.62rem;
+  font-size: 0.8rem;
   line-height: 1.4;
   color: #3a3028;
   margin: 0;
 }
 
 .postcard-back-address-line {
-  font-size: 0.62rem;
+  font-size: 0.8rem;
   color: #3a3028;
   margin: 0;
   padding-bottom: 3px;
