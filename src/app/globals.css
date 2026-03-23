@@ -103,8 +103,7 @@ body {
 }
 
 .postcard-title {
-  position: relative;
-  color: #ffffff;
+  color: #f6e3a4;
   font-size: 1.45rem;
   font-weight: 400;
   text-align: left;
@@ -113,16 +112,6 @@ body {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   margin: 0;
-}
-
-.postcard-title::before {
-  content: attr(data-text);
-  position: absolute;
-  inset: 0;
-  color: #f6e3a4;
-  font-family: "Bungee", sans-serif;
-  text-shadow: none;
-  z-index: -1;
 }
 
 .postcard-subtitle {
