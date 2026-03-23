@@ -1,4 +1,7 @@
+import Image from "next/image";
 import { EmailLink } from "@/components/EmailLink";
+
+const POSTCARD_SIZES = "(max-width: 640px) 90vw, 30vw";
 
 export default function Home() {
   return (
@@ -46,11 +49,13 @@ export default function Home() {
         >
           <div className="postcard-card h-56 sm:h-72 lg:h-80">
             <div className="postcard-front">
-              <img
+              <Image
                 src="/images/postcards/dudilspostcard.webp"
                 alt="Dudils"
-                className="w-full h-full object-cover"
-                fetchPriority="high"
+                fill
+                className="object-cover"
+                sizes={POSTCARD_SIZES}
+                priority
               />
               <div className="postcard-overlay">
                 <h2 className="postcard-title font-title">Dudils</h2>
@@ -58,11 +63,12 @@ export default function Home() {
               </div>
             </div>
             <div className="postcard-back">
-              <img
+              <Image
                 src="/images/postcards/reverse/dudils.webp"
                 alt="Dudils details"
-                className="w-full h-full object-fill"
-                loading="lazy"
+                fill
+                className="object-fill"
+                sizes={POSTCARD_SIZES}
               />
               <div className="postcard-back-content">
                 <h2 className="postcard-back-header font-handwrite">Dudils</h2>
@@ -93,11 +99,13 @@ export default function Home() {
         >
           <div className="postcard-card h-56 sm:h-72 lg:h-80">
             <div className="postcard-front">
-              <img
+              <Image
                 src="/images/postcards/good.webp"
                 alt="Good Architect"
-                className="w-full h-full object-cover"
-                fetchPriority="high"
+                fill
+                className="object-cover"
+                sizes={POSTCARD_SIZES}
+                priority
               />
               <div className="postcard-overlay">
                 <h2 className="postcard-title font-title">Good Architect</h2>
@@ -105,11 +113,12 @@ export default function Home() {
               </div>
             </div>
             <div className="postcard-back">
-              <img
+              <Image
                 src="/images/postcards/reverse/good.webp"
                 alt="Good Architect details"
-                className="w-full h-full object-fill"
-                loading="lazy"
+                fill
+                className="object-fill"
+                sizes={POSTCARD_SIZES}
               />
               <div className="postcard-back-content">
                 <h2 className="postcard-back-header font-handwrite">Good Architect</h2>
@@ -139,11 +148,13 @@ export default function Home() {
         >
           <div className="postcard-card h-56 sm:h-72 lg:h-80">
             <div className="postcard-front">
-              <img
+              <Image
                 src="/images/postcards/Friendsfindmepostcard.webp"
                 alt="Friends Find Me"
-                className="w-full h-full object-cover"
-                fetchPriority="high"
+                fill
+                className="object-cover"
+                sizes={POSTCARD_SIZES}
+                priority
               />
               <div className="postcard-overlay">
                 <h2 className="postcard-title font-title">FriendsFindMe</h2>
@@ -151,11 +162,12 @@ export default function Home() {
               </div>
             </div>
             <div className="postcard-back">
-              <img
+              <Image
                 src="/images/postcards/reverse/friend.webp"
                 alt="FriendsFindMe details"
-                className="w-full h-full object-fill"
-                loading="lazy"
+                fill
+                className="object-fill"
+                sizes={POSTCARD_SIZES}
               />
               <div className="postcard-back-content">
                 <h2 className="postcard-back-header font-handwrite">FriendsFindMe</h2>
