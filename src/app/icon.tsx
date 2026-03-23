@@ -25,11 +25,9 @@ export default async function Icon() {
           style={{
             fontFamily: "Corinthia",
             fontWeight: 700,
-            fontSize: 36,
+            fontSize: 24,
             color: "#f6e3a4",
             lineHeight: 1,
-            marginTop: 2,
-            marginLeft: 1,
           }}
         >
           C

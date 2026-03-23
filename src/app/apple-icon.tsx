@@ -25,7 +25,7 @@ export default async function AppleIcon() {
           style={{
             fontFamily: "Corinthia",
             fontWeight: 700,
-            fontSize: 180,
+            fontSize: 130,
             color: "#f6e3a4",
             lineHeight: 1,
           }}
