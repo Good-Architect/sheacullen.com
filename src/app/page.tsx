@@ -70,7 +70,7 @@ export default function Home() {
                 src="/images/postcards/reverse/dudils.webp"
                 alt="Dudils details"
                 fill
-                className="object-fill"
+                style={{ objectFit: "fill" }}
                 sizes={POSTCARD_SIZES}
                 quality={55}
               />
@@ -122,7 +122,7 @@ export default function Home() {
                 src="/images/postcards/reverse/good.webp"
                 alt="Good Architect details"
                 fill
-                className="object-fill"
+                style={{ objectFit: "fill" }}
                 sizes={POSTCARD_SIZES}
                 quality={55}
               />
@@ -173,7 +173,7 @@ export default function Home() {
                 src="/images/postcards/reverse/friend.webp"
                 alt="FriendsFindMe details"
                 fill
-                className="object-fill"
+                style={{ objectFit: "fill" }}
                 sizes={POSTCARD_SIZES}
                 quality={55}
               />
