@@ -150,7 +150,7 @@ export default function Home() {
           href="https://www.friendsfindme.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="postcard-wrapper rotate-3 origin-bottom z-10 mt-4 sm:mt-0"
+          className="postcard-wrapper -rotate-3 sm:rotate-3 origin-bottom z-10 mt-4 sm:mt-0"
         >
           <div className="postcard-card h-56 sm:h-72 lg:h-80">
             <div className="postcard-front">
