@@ -206,13 +206,13 @@ body {
     padding: 1.5rem 2.5rem 1.5rem 3rem;
   }
   .postcard-back-header {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
   }
   .postcard-back-description {
-    font-size: 0.82rem;
+    font-size: 0.95rem;
   }
   .postcard-back-address-line {
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     padding-bottom: 4px;
   }
 }
@@ -225,13 +225,13 @@ body {
     font-size: 2.43rem;
   }
   .postcard-back-header {
-    font-size: 1.05rem;
+    font-size: 1.15rem;
   }
   .postcard-back-description {
-    font-size: 0.92rem;
+    font-size: 1.05rem;
   }
   .postcard-back-address-line {
-    font-size: 0.92rem;
+    font-size: 1.05rem;
     padding-bottom: 5px;
   }
 }
