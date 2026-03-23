@@ -47,7 +47,7 @@ export default function Home() {
           href="https://dudils.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="postcard-wrapper -rotate-3 origin-bottom z-30 sm:-mr-4 md:-mr-8"
+          className="postcard-wrapper -rotate-3 origin-bottom z-30 mb-4 sm:mb-0 sm:-mr-4 md:-mr-8"
         >
           <div className="postcard-card h-56 sm:h-72 lg:h-80">
             <div className="postcard-front">
