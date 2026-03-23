@@ -112,7 +112,7 @@ export default function Home() {
                   <div className="postcard-back-left">
                     <p className="postcard-back-description font-handwrite">
                       An architecture website that advocates for sustainability and educates people on passive solar design and common approval processes.
-                      <br /><br /><strong>Goal:</strong> showcase past work and reviews while providing an SEO channel.
+                      <br /><br /><strong>Goal:</strong> showcase past work and reviews while providing a SEO channel.
                     </p>
                   </div>
                                     <div className="postcard-back-right">
