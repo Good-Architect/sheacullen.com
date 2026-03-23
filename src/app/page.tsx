@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { EmailLink } from "@/components/EmailLink";
 
-const POSTCARD_SIZES = "(max-width: 640px) 90vw, 30vw";
+const POSTCARD_SIZES = "(max-width: 640px) 85vw, (max-width: 1024px) 30vw, 320px";
 
 export default function Home() {
   return (
@@ -55,6 +55,7 @@ export default function Home() {
                 fill
                 className="object-cover"
                 sizes={POSTCARD_SIZES}
+                quality={55}
                 priority
               />
               <div className="postcard-overlay">
@@ -69,6 +70,7 @@ export default function Home() {
                 fill
                 className="object-fill"
                 sizes={POSTCARD_SIZES}
+                quality={55}
               />
               <div className="postcard-back-content">
                 <h2 className="postcard-back-header font-handwrite">Dudils</h2>
@@ -105,6 +107,7 @@ export default function Home() {
                 fill
                 className="object-cover"
                 sizes={POSTCARD_SIZES}
+                quality={55}
                 priority
               />
               <div className="postcard-overlay">
@@ -119,6 +122,7 @@ export default function Home() {
                 fill
                 className="object-fill"
                 sizes={POSTCARD_SIZES}
+                quality={55}
               />
               <div className="postcard-back-content">
                 <h2 className="postcard-back-header font-handwrite">Good Architect</h2>
@@ -154,6 +158,7 @@ export default function Home() {
                 fill
                 className="object-cover"
                 sizes={POSTCARD_SIZES}
+                quality={55}
                 priority
               />
               <div className="postcard-overlay">
@@ -168,6 +173,7 @@ export default function Home() {
                 fill
                 className="object-fill"
                 sizes={POSTCARD_SIZES}
+                quality={55}
               />
               <div className="postcard-back-content">
                 <h2 className="postcard-back-header font-handwrite">FriendsFindMe</h2>
