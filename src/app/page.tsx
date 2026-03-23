@@ -1,10 +1,12 @@
+import { EmailLink } from "@/components/EmailLink";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#020202] flex flex-col items-center overflow-hidden">
       {/* Logo with horizontal lines */}
       <div className="w-full flex items-center gap-4 pt-[76px] sm:pt-[91px] pb-5 px-6">
         <div className="flex-1 border-t-2 border-[#f6e3a4]" />
-        <a href="mailto:shea@goodarchitect.com.au" className="text-[#f6e3a4] tracking-[0.35em] text-2xl sm:text-3xl inline-flex items-center no-underline hover:opacity-80 transition-opacity">
+        <EmailLink className="text-[#f6e3a4] tracking-[0.35em] text-2xl sm:text-3xl inline-flex items-center no-underline hover:opacity-80 transition-opacity cursor-pointer">
           <span className="font-display">SHEA</span>
           <span
             className="font-cursive text-[2.65em] tracking-normal leading-none -ml-2"
@@ -12,7 +14,7 @@ export default function Home() {
             C
           </span>
           <span className="font-display ml-1">ULLEN</span>
-        </a>
+        </EmailLink>
         <div className="flex-1 border-t-2 border-[#f6e3a4]" />
       </div>
 
@@ -25,12 +27,11 @@ export default function Home() {
           <p className="mt-4 text-white/75 text-sm sm:text-base lg:text-[26px] leading-snug font-sans">
             human | kind | design
           </p>
-          <a
-            href="mailto:shea@goodarchitect.com.au"
-            className="mt-6 mb-8 sm:mb-10 inline-block rounded-full border border-[#f6e3a4]/40 bg-[#f6e3a4] px-8 py-3 text-sm sm:text-base text-[#020202] font-sans tracking-wide hover:bg-[#f6e3a4]/80 transition-colors duration-200"
+          <EmailLink
+            className="mt-6 mb-8 sm:mb-10 inline-block rounded-full border border-[#f6e3a4]/40 bg-[#f6e3a4] px-8 py-3 text-sm sm:text-base text-[#020202] font-sans tracking-wide hover:bg-[#f6e3a4]/80 transition-colors duration-200 cursor-pointer"
           >
             shea@goodarchitect.com.au
-          </a>
+          </EmailLink>
         </div>
       </div>
 
