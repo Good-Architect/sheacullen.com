@@ -26,7 +26,7 @@ export default function Home() {
       <div className="flex-1 flex flex-col items-center justify-center px-6 pt-4 sm:pt-6 lg:pt-8 pb-4">
         <div className="max-w-3xl text-center">
           <h1 className="text-white font-serif text-xl sm:text-4xl lg:text-[52px] font-normal leading-tight lg:leading-[1.1]">
-            A designer who creates products that work with how humans work.
+            Architect. Product designer.<br />An unquenchable hunger to create.
           </h1>
           <p className="mt-4 text-white/75 text-sm sm:text-base lg:text-[26px] leading-snug font-sans">
             human | kind | design
@@ -34,7 +34,7 @@ export default function Home() {
           <EmailLink
             className="mt-6 mb-8 sm:mb-10 inline-block rounded-full border border-[#f6e3a4]/40 bg-[#f6e3a4] px-8 py-3 text-sm sm:text-base text-[#020202] font-sans tracking-wide hover:bg-[#f6e3a4]/80 transition-colors duration-200 cursor-pointer"
           >
-            shea@goodarchitect.com.au
+            Work Together
           </EmailLink>
         </div>
       </div>

@@ -5,7 +5,7 @@ import {
   Corinthia,
   Montserrat,
   Teko,
-  Bungee_Shade,
+  DM_Serif_Display,
   Handlee,
 } from "next/font/google";
 import "./globals.css";
@@ -41,7 +41,7 @@ const teko = Teko({
   variable: "--nf-subtitle",
 });
 
-const bungeeShade = Bungee_Shade({
+const dmSerifDisplay = DM_Serif_Display({
   weight: "400",
   subsets: ["latin"],
   display: "swap",
@@ -61,19 +61,19 @@ const fontVars = [
   corinthia.variable,
   montserrat.variable,
   teko.variable,
-  bungeeShade.variable,
+  dmSerifDisplay.variable,
   handlee.variable,
 ].join(" ");
 
 export const metadata: Metadata = {
   title: "Shea Cullen — Humankind Design",
   description:
-    "A designer who creates products that work with how humans work.",
+    "Architect. Product designer. An unquenchable hunger to create.",
   metadataBase: new URL("https://sheacullen.com"),
   openGraph: {
     title: "Shea Cullen — Humankind Design",
     description:
-      "A designer who creates products that work with how humans work.",
+      "Architect. Product designer. An unquenchable hunger to create.",
     url: "https://sheacullen.com",
     siteName: "Shea Cullen",
     locale: "en_AU",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shea Cullen — Humankind Design",
     description:
-      "A designer who creates products that work with how humans work.",
+      "Architect. Product designer. An unquenchable hunger to create.",
   },
   robots: {
     index: true,

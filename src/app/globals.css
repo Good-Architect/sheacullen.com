@@ -10,7 +10,7 @@
   --font-script: "Cormorant", Georgia, serif;
   --font-display: var(--nf-display), "Shentox", "Eve Sans Neue", ui-sans-serif, system-ui, sans-serif;
   --font-cursive: var(--nf-cursive), "Edwardian Script ITC", "Bickham Script Pro", "Snell Roundhand", cursive;
-  --font-title: var(--nf-title), "Ewert", "Autour One", "Rye", "Boldnose", "Bungee", "Impact", sans-serif;
+  --font-title: var(--nf-title), "Georgia", serif;
   --font-subtitle: var(--nf-subtitle), "Oswald", "Anton", sans-serif;
   --font-handwrite: var(--nf-handwrite), "Comic Sans MS", cursive;
 }
