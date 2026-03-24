@@ -62,7 +62,7 @@ export default function Home() {
               />
               <div className="postcard-overlay">
                 <h2 className="postcard-title font-title">Dudils</h2>
-                <p className="postcard-subtitle font-subtitle">home plan search engine</p>
+                <p className="postcard-subtitle font-sans">home plan search engine</p>
               </div>
             </div>
             <div className="postcard-back">
@@ -114,7 +114,7 @@ export default function Home() {
               />
               <div className="postcard-overlay">
                 <h2 className="postcard-title font-title">Good Architect</h2>
-                <p className="postcard-subtitle font-subtitle">architecture website</p>
+                <p className="postcard-subtitle font-sans">architecture website</p>
               </div>
             </div>
             <div className="postcard-back">
@@ -165,7 +165,7 @@ export default function Home() {
               />
               <div className="postcard-overlay">
                 <h2 className="postcard-title font-title">FriendsFindMe</h2>
-                <p className="postcard-subtitle font-subtitle">Choose your adventure</p>
+                <p className="postcard-subtitle font-sans">Choose your adventure</p>
               </div>
             </div>
             <div className="postcard-back">

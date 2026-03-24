@@ -115,11 +115,11 @@ body {
 
 .postcard-title {
   color: #f6e3a4;
-  font-size: 1.45rem;
+  font-size: 2rem;
   font-weight: 400;
   text-align: left;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   margin: 0;
@@ -127,13 +127,14 @@ body {
 
 .postcard-subtitle {
   color: rgba(255, 255, 255, 0.85);
-  font-size: 1.755rem;
+  font-size: 0.85rem;
   font-weight: 400;
   text-align: left;
   line-height: 1.3;
+  letter-spacing: 0.04em;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  margin: 0.12rem 0 0;
+  margin: 0.25rem 0 0;
 }
 
 /* Scale up text on hover */
@@ -201,10 +202,10 @@ body {
 
 @media (min-width: 640px) {
   .postcard-title {
-    font-size: 1.65rem;
+    font-size: 2.4rem;
   }
   .postcard-subtitle {
-    font-size: 2.16rem;
+    font-size: 1rem;
   }
   .postcard-overlay {
     padding: 1.5rem 2.5rem 1.5rem 3rem;
@@ -223,10 +224,10 @@ body {
 
 @media (min-width: 1024px) {
   .postcard-title {
-    font-size: 1.925rem;
+    font-size: 2.75rem;
   }
   .postcard-subtitle {
-    font-size: 2.43rem;
+    font-size: 1.1rem;
   }
   .postcard-back-header {
     font-size: 1.15rem;
