@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { projects, getProject } from "@/lib/projects";
+import { parseBody } from "@/lib/parse-body";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
@@ -30,8 +31,7 @@ export default async function ProjectPage({
   const project = getProject(slug);
   if (!project) notFound();
 
-  // Simple markdown-like rendering: split by ## headings
-  const sections = project.body.split(/^## /m).filter(Boolean);
+  const sections = parseBody(project.body);
 
   return (
     <article className="pt-32 pb-20 md:pt-44 md:pb-28">
@@ -81,83 +81,59 @@ export default async function ProjectPage({
 
         {/* Body */}
         <div className="prose-custom">
-          {sections.map((section, i) => {
-            const lines = section.split("\n");
-            const heading = i === 0 ? null : lines[0].trim();
-            const content = (i === 0 ? lines : lines.slice(1))
-              .join("\n")
-              .trim();
-
-            return (
-              <section key={i} className="mb-14">
-                {heading && (
-                  <h2 className="text-2xl font-normal text-brand-black mb-6" style={{ fontFamily: "var(--font-serif)" }}>
-                    {heading}
-                  </h2>
-                )}
-                <div className="space-y-5">
-                  {content.split(/\n\n+/).map((para, j) => {
-                    // Handle ### subheadings
-                    if (para.startsWith("### ")) {
-                      return (
-                        <h3
-                          key={j}
-                          className="text-lg font-normal text-brand-black mt-10 mb-4" 
-                          style={{ fontFamily: "var(--font-serif)" }}
-                        >
-                          {para.replace("### ", "")}
-                        </h3>
-                      );
-                    }
-                    // Handle bullet lists
-                    if (para.startsWith("- ")) {
-                      return (
-                        <ul
-                          key={j}
-                          className="space-y-2 text-brand-gray-700 leading-relaxed"
-                        >
-                          {para.split("\n").map((line, k) => (
-                            <li
-                              key={k}
-                              className="flex gap-3"
-                            >
-                              <span className="text-brand-gray-300 mt-0.5">
-                                •
-                              </span>
-                              <span>
-                                {line.replace(/^- /, "")}
-                              </span>
-                            </li>
-                          ))}
-                        </ul>
-                      );
-                    }
-                    // Handle bold text within paragraphs
-                    const parts = para.split(/\*\*(.*?)\*\*/g);
+          {sections.map((section, i) => (
+            <section key={i} className="mb-14">
+              {section.heading && (
+                <h2 className="text-2xl font-normal text-brand-black mb-6" style={{ fontFamily: "var(--font-serif)" }}>
+                  {section.heading}
+                </h2>
+              )}
+              <div className="space-y-5">
+                {section.paragraphs.map((para, j) => {
+                  if (para.type === "subheading") {
                     return (
-                      <p
+                      <h3
                         key={j}
-                        className="text-brand-gray-700 leading-relaxed"
+                        className="text-lg font-normal text-brand-black mt-10 mb-4"
+                        style={{ fontFamily: "var(--font-serif)" }}
                       >
-                        {parts.map((part, k) =>
-                          k % 2 === 1 ? (
-                            <strong
-                              key={k}
-                              className="font-medium text-brand-black"
-                            >
-                              {part}
-                            </strong>
-                          ) : (
-                            <span key={k}>{part}</span>
-                          )
-                        )}
-                      </p>
+                        {para.text}
+                      </h3>
                     );
-                  })}
-                </div>
-              </section>
-            );
-          })}
+                  }
+                  if (para.type === "list") {
+                    return (
+                      <ul
+                        key={j}
+                        className="space-y-2 text-brand-gray-700 leading-relaxed"
+                      >
+                        {para.items.map((item, k) => (
+                          <li key={k} className="flex gap-3">
+                            <span className="text-brand-gray-300 mt-0.5">•</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    );
+                  }
+                  const parts = para.text.split(/\*\*(.*?)\*\*/g);
+                  return (
+                    <p key={j} className="text-brand-gray-700 leading-relaxed">
+                      {parts.map((part, k) =>
+                        k % 2 === 1 ? (
+                          <strong key={k} className="font-medium text-brand-black">
+                            {part}
+                          </strong>
+                        ) : (
+                          <span key={k}>{part}</span>
+                        )
+                      )}
+                    </p>
+                  );
+                })}
+              </div>
+            </section>
+          ))}
         </div>
 
         {/* Next project */}
