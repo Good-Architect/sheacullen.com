@@ -44,18 +44,6 @@
           }
         ]
       }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "agent",
-            "prompt": "You are a code reviewer. Review the changes made in this session for bugs, security issues, and quality problems. Check that: 1) No obvious bugs or logic errors exist, 2) Error handling is present where needed, 3) No secrets, API keys, or credentials are hardcoded, 4) Tests exist for new functionality, 5) Code is not unnecessarily complex. If the session_id shows stop_hook_active is true, respond with {\"ok\": true} immediately to avoid loops. Otherwise, if everything looks good respond with {\"ok\": true}. If there are issues, respond with {\"ok\": false, \"reason\": \"description of what needs fixing\"}. $ARGUMENTS",
-            "timeout": 120,
-            "statusMessage": "Code review agent checking work..."
-          }
-        ]
-      }
     ]
   },
   "enabledPlugins": {
