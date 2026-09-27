@@ -115,7 +115,7 @@ body {
 
 .postcard-title {
   color: #f6e3a4;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 400;
   text-align: left;
   line-height: 1.1;
@@ -202,7 +202,7 @@ body {
 
 @media (min-width: 640px) {
   .postcard-title {
-    font-size: 2.4rem;
+    font-size: 3.36rem;
   }
   .postcard-subtitle {
     font-size: 1rem;
@@ -224,7 +224,7 @@ body {
 
 @media (min-width: 1024px) {
   .postcard-title {
-    font-size: 2.75rem;
+    font-size: 3.85rem;
   }
   .postcard-subtitle {
     font-size: 1.1rem;
